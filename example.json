@@ -1,0 +1,163 @@
+{
+  "account": {
+    "accountNumber": 111111,
+    "initialAmount": 187.89
+  },
+  "steps": [
+    {
+      "id": 1,
+      "operationName": "holiday-discount",
+      "nextIdIfOutputIsLessThan": 2,
+      "nextIdIfOutputIsGreaterThan": 2
+    },
+    {
+      "id": 2,
+      "operationName": "credit-status",
+      "nextIdIfOutputIsLessThan": 3,
+      "nextIdIfOutputIsGreaterThan": 5
+    },
+    {
+      "id": 3,
+      "operationName": "account-age",
+      "nextIdIfOutputIsLessThan": 5,
+      "nextIdIfOutputIsGreaterThan": 4
+    },
+    {
+      "id": 4,
+      "operationName": "account-age",
+      "nextIdIfOutputIsLessThan": 5,
+      "nextIdIfOutputIsGreaterThan": 5
+    },
+    {
+      "id": 5,
+      "operationName": "interest-rate",
+      "nextIdIfOutputIsLessThan": 0,
+      "nextIdIfOutputIsGreaterThan": 0
+    }
+  ]
+}
+
+
+{
+  "finalAmount": 165.80184,
+  "executedStepIds": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "stopReason": "Stopped Because ID is 0"
+}
+
+
+{
+  "account": {
+    "accountNumber": 222222,
+    "initialAmount": 1999
+  },
+  "steps": [
+    {
+      "id": 1,
+      "operationName": "credit-status",
+      "nextIdIfOutputIsLessThan": 2,
+      "nextIdIfOutputIsGreaterThan": 2
+    },
+    {
+      "id": 2,
+      "operationName": "interest-rate",
+      "nextIdIfOutputIsLessThan": 0,
+      "nextIdIfOutputIsGreaterThan": 0
+    }
+  ]
+}
+
+{
+  "finalAmount": 2038.98,
+  "executedStepIds": [
+    1
+  ],
+  "stopReason": "Stopped because output was >= 2000 or <= 0"
+}
+
+
+{
+  "account": {
+    "accountNumber": 111111,
+    "initialAmount": 1
+  },
+  "steps": [
+    {
+      "id": 1,
+      "operationName": "account-age",
+      "nextIdIfOutputIsLessThan": 2,
+      "nextIdIfOutputIsGreaterThan": 2
+    },
+    {
+      "id": 2,
+      "operationName": "account-age",
+      "nextIdIfOutputIsLessThan": 3,
+      "nextIdIfOutputIsGreaterThan": 3
+    },
+    {
+      "id": 3,
+      "operationName": "account-age",
+      "nextIdIfOutputIsLessThan": 0,
+      "nextIdIfOutputIsGreaterThan": 0
+    }
+  ]
+}
+
+
+{
+  "finalAmount": 0.729,
+  "executedStepIds": [
+    1,
+    2,
+    3
+  ],
+  "stopReason": "Stopped Because ID is 0"
+}
+
+
+{
+  "account": {
+    "accountNumber": 222222,
+    "initialAmount": 1200
+  },
+  "steps": [
+    {
+      "id": 1,
+      "operationName": "holiday-discount",
+      "nextIdIfOutputIsLessThan": 2,
+      "nextIdIfOutputIsGreaterThan": 2
+    },
+    {
+      "id": 2,
+      "operationName": "credit-status",
+      "nextIdIfOutputIsLessThan": 3,
+      "nextIdIfOutputIsGreaterThan": 5
+    },
+    {
+      "id": 3,
+      "operationName": "account-age",
+      "nextIdIfOutputIsLessThan": 5,
+      "nextIdIfOutputIsGreaterThan": 4
+    },
+    {
+      "id": 5,
+      "operationName": "interest-rate",
+      "nextIdIfOutputIsLessThan": 0,
+      "nextIdIfOutputIsGreaterThan": 0
+    }
+  ]
+}
+
+{
+  "finalAmount": 1163.3814,
+  "executedStepIds": [
+    1,
+    2,
+    5
+  ],
+  "stopReason": "Stopped Because ID is 0"
+}
